@@ -1,0 +1,78 @@
+# =============================================================================
+# CRITICAL: Alpha Protection - Never Push Proprietary Code
+# =============================================================================
+
+# Proprietary Code Directory
+REFERENCE/
+
+# All Python files (implementation code)
+*.py
+!setup.py
+!src/examples/*.py
+!src/examples/**/*.py
+!src/examples/**/*.txt
+!src/examples/**/*.png
+!src/examples/**/*.csv
+
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.jsonl
+*.json
+!package.json
+*.parquet
+*.h5
+*.pkl
+*.pickle
+
+# Configuration with secrets
+config/
+*.yaml
+*.yml
+!.github/**/*.yml
+
+# Logs and debug
+*.log
+logs/
+debug_logs/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+
+# Environment
+.env
+.env.*
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backtest outputs
+BACKTEST_DATA/
+COLLECTED_SIGNALS/
+LIVE_SIGNALS/
